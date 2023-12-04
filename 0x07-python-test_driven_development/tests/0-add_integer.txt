@@ -1,0 +1,47 @@
+this is a module that test the add integer function
+------------------------------
+
+First improt ''add_integer'' from the ''0-add_integer''module:
+
+>>> add = __import__('0-add_integer').add_integer
+
+adding two positive numbers:
+ 
+>>> print(add(1, 2))
+3
+
+adding a positive number to a negative number:
+
+>>> print(add(100, -2))
+98
+
+adding a positive number to the defult value of b:
+>>> print(add(2))
+100
+
+adding a float to an int:
+>>> print(add(100.3, 2))
+102
+
+adding a string to an int:
+>>> print(add("school", 2))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+adding an int to a string:
+
+>>> print(add(2, "school"))
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+adding a float to negative number:
+>>> print(add(100.3, -2))
+98
+
+adding a tuple to an int:
+>>> print(add((1, 2)))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
